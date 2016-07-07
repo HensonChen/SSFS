@@ -1979,7 +1979,25 @@
 
 			.image.fit img {
 				width: 100%;
+
 			}
+
+		.image.fitS {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+			background-color:black;
+		}
+
+			.image.fitS img {
+				width: 100%;
+
+			}
+
+			.image.fitS:hover > img {
+    		opacity:0.75;
+
+}
 
 /* List */
 
@@ -2616,7 +2634,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 6em 4em 4em 4em ;
 	}
 
 		.wrapper > .inner {
