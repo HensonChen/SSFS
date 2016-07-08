@@ -2305,7 +2305,7 @@
 		button.fit,
 		.button.fit {
 			display: block;
-			margin: 4.7em 0 1em 0;
+			margin: 2em 0 1em 0;
 			width: 100%;
 		}
 
@@ -3593,17 +3593,19 @@
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
 		max-width: 55em;
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
 	}
 
 		#cta .inner header {
-			-moz-order: 1;
+			/*-moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
-			order: 1;
-			padding-right: 3em;
-			width: 70%;
+			order: 1;*/
+			padding-right: 0em;
+			width: 100%;
 		}
 
 			#cta .inner header p {
@@ -3611,12 +3613,22 @@
 			}
 
 		#cta .inner .actions {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
-			width: 30%;
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			width: 75%;
+			margin:2em 0 0 2em;
 		}
+
+		@media screen and (max-width: 1060px) {
+
+			#cta .inner .actions {
+				width: 85%;
+			}
+
+		}
+
 
 		@media screen and (max-width: 980px) {
 
@@ -3625,25 +3637,42 @@
 				text-align: center;
 			}
 
-				#cta .inner header {
-					padding-right: 0;
-					width: 100%;
-				}
-
-				#cta .inner .actions {
-					margin-left: auto;
-					margin-right: auto;
-					max-width: 20em;
-					width: 100%;
-				}
+			#cta .inner .actions {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 55em;
+				width: 70%;
+			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
-			#cta .inner .actions {
-				max-width: none;
+			#cta .inner li {
+					margin-bottom: 1em;
 			}
+		}
+
+		@media screen and (max-width: 589px) {
+
+			#cta .inner .actions {
+				width: 80%;
+			}
+			
+			#cta .inner li {
+					margin-bottom: 1em;
+			}
+
+		}
+
+		@media screen and (max-width: 469px) {
+
+			#cta .inner .actions {
+				width: 90%;
+			}
+
+		}
+
 
 		}
 
