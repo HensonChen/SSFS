@@ -3617,14 +3617,14 @@
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			width: 75%;
+			width: 85%;
 			margin:2em 0 0 2em;
 		}
 
 		@media screen and (max-width: 1060px) {
 
 			#cta .inner .actions {
-				width: 85%;
+				width: 100%;
 			}
 
 		}
@@ -3646,6 +3646,14 @@
 
 		}
 
+		@media screen and (max-width: 798px) {
+
+			#cta .inner .actions {
+				width: 75%;
+			}
+
+		}
+
 		@media screen and (max-width: 736px) {
 
 			#cta .inner li {
@@ -3653,7 +3661,7 @@
 			}
 		}
 
-		@media screen and (max-width: 589px) {
+		@media screen and (max-width: 621px) {
 
 			#cta .inner .actions {
 				width: 80%;
@@ -3665,10 +3673,18 @@
 
 		}
 
-		@media screen and (max-width: 469px) {
+		@media screen and (max-width: 555px) {
 
 			#cta .inner .actions {
 				width: 90%;
+			}
+
+		}
+
+		@media screen and (max-width: 454px) {
+
+			#cta .inner .actions {
+				width: 95%;
 			}
 
 		}
